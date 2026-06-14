@@ -1,0 +1,35 @@
+The ``add_integer`` function
+============================
+
+Using integers:
+
+    >>> add_integer(1, 2)
+    3
+
+    >>> add_integer(100, -2)
+    98
+
+Using default value for b:
+
+    >>> add_integer(2)
+    100
+
+Using floats:
+
+    >>> add_integer(3.7, 2)
+    5
+
+    >>> add_integer(2, 3.8)
+    5
+
+Type checking:
+
+    >>> add_integer("3", 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer(3, "2")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
