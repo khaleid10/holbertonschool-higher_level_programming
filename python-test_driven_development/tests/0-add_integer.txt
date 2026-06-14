@@ -17,3 +17,13 @@ Using default value for b:
 
     >>> add_integer(2)
     100
+Using floats:
+
+    >>> add_integer(3.7, 2)
+    5
+
+    >>> add_integer(2, 3.8)
+    5
+
+    >>> add_integer(3.7, 2.8)
+    5
