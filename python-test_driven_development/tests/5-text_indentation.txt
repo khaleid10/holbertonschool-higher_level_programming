@@ -1,0 +1,30 @@
+The ``text_indentation`` function
+=================================
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+    >>> text_indentation("Hello. How are you?")
+    Hello.
+    <BLANKLINE>
+    How are you?
+    <BLANKLINE>
+
+    >>> text_indentation("Best school: Holberton")
+    Best school:
+    <BLANKLINE>
+    Holberton
+
+    >>> text_indentation("Hello.  World")
+    Hello.
+    <BLANKLINE>
+    World
+
+    >>> text_indentation(12)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
