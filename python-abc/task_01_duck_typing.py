@@ -2,8 +2,7 @@
 """Module that defines shapes using abstract base classes."""
 
 from abc import ABC, abstractmethod
-from math import pi
-
+import math
 
 class Shape(ABC):
     """Abstract base class for shapes."""
@@ -28,7 +27,7 @@ class Circle(Shape):
 
     def area(self):
         """Return the area of the circle."""
-        return pi * self.radius ** 2
+        return math.pi * self.radius ** 2
 
     def perimeter(self):
         """Return the perimeter of the circle."""
